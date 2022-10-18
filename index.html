@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ufonautas</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img src="img/logo.png" class="nav__logo" id="logo" />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Education</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Mission</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Researchers</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >My account</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="pav">
+        <img src="img/planet.png" />
+      </div>
+
+      <div class="title_text">
+        <h3>
+          Our site provides useful and interesting information about comsmos.
+          Once you found something interesting you can contact a science
+          researchers about it
+        </h3>
+      </div>
+
+      <div class="header__title">
+        <h1>When cosmos opens up</h1>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+      </div>
+    </header>
+
+</body> 
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">Create account and contact scientists</h2>
+      <form class="modal__form" action="connect.php" method="POST">
+        <label>First Name</label>
+        <input type="text" name="first_name" required />
+        <label>Last Name</label>
+        <input type="text" name="last_name" required />
+        <label>Email Address</label>
+        <input type="email" name="email" required />
+        
+        <input class="btn" type="submit" name="submit">Done &rarr;</input>
+    </div>
+</form>
+    <div class="overlay hidden"></div>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Education</h2>
+        <h3 class="section__header">
+          Information about different objects in the cosmos
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/darkmatter.jpg"
+          data-src="img/darkmatter.jpg"
+          alt="dark matter"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Dark matter</h5>
+          <p>
+            The evidence for dark matter lies with gravity. Gravity is the force
+            or “glue” that holds the universe together. Everything in the
+            universe is mutually attracted to everything else. Scientists have
+            been able to calculate the total mass of the visible universe. They
+            have also calculated the gravitational forces that hold the universe
+            together. What they have found is that there does not appear to be
+            enough visible matter to account for the mass that is required to
+            gravitationally bind the universe together. In addition, dark matter
+            can be detected through its gravitational influence on other
+            objects, or even on light itself. It can affect the motion of stars
+            and galaxies. Many galaxies have been found to be rotating much
+            faster that they should. According to Einstein’s theory of gravity,
+            they should fly apart. But something unseen seems to be holding them
+            together. Dark matter can also affect the path of light. In a
+            phenomenon known as gravitational lensing, dense objects can cause
+            the light of distant objects to bend around it. This can result in
+            distorted images and duplicate images of stars and galaxies. We can
+            tell that something is bending the light, but we can’t tell what it
+            is.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Pulsar</h5>
+          <p>
+            A pulsar is basically a rapidly spinning neutron star. A neutron
+            star is the highly compacted core of a dead star, left behind in a
+            supernova explosion. This neutron star has a powerful magnetic
+            field. In fact, this magnetic field is about one trillion times as
+            powerful as the magnetic field of the Earth. The magnetic field
+            causes the neutron star to emit strong radio waves and radioactive
+            particles from its north and south poles. These particles can
+            include a variety of radiation, including visible light. Pulsars
+            that emit powerful gamma rays are known as gamma ray pulsars. If the
+            neutron star happens to be aligned so that the poles face the Earth,
+            we see the radio waves every time one of the poles rotates into our
+            line of sight. It is a similar effect as that of a lighthouse. As
+            the lighthouse rotates, its light appears to a stationary observer
+            to blink on and off. In the same way, the pulsar appears to be
+            blinking as its rotating poles sweep past the Earth. Different
+            pulsars pulse at different rates, depending on the size and mass of
+            the neutron star. Sometimes a pulsar may have a binary companion. In
+            some cases, the pulsar may begin to draw in matter from this
+            companion. this can cause the pulsar to rotate even faster. The
+            fastest pulsars can pulse at well over a hundred times a second.
+          </p>
+        </div>
+        <img
+          src="img/pulsar.jpg"
+          data-src="img/pulsar.jpg"
+          alt="pulsar"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/nebulae.jpg"
+          data-src="img/nebulae.jpg"
+          alt="nebulae"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Nebulae</h5>
+          <p>
+            The word “nebula” is derived from the Latin word for “clouds”.
+            Indeed, a nebula is a cosmic cloud of gas and dust floating in
+            space. More than one nebula are called nebulae. Nebulae are the
+            basic building blocks of the universe. They contain the elements
+            from which stars and solar systems are built. They are also among
+            the most beautiful objects in the universe, glowing with rich colors
+            and swirls of light. Stars inside these clouds of gas cause them to
+            glow with beautiful reds, blues, and greens. These colors are the
+            result of different elements within the nebula. Most nebulae are
+            composed of about 90% hydrogen, 10% helium, and 0.1% heavy elements
+            such as carbon, nitrogen, magnesium, potassium, calcium, iron. These
+            clouds of matter are also quite large. In fact, they are among the
+            largest objects in the galaxy. Many of them are dozens or even
+            hundreds of light-years across. Nebulae have been divided into five
+            major categories. These are emission nebulae, reflection nebulae,
+            dark nebulae, planetary nebulae, and supernova remnants. Emission
+            and reflection nebulae tend to be fuzzy in appearance and lack any
+            noticeable shape or structure. They are also known as diffuse
+            nebulae.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Mission</h2>
+        <h3 class="section__header">
+          What you can achieve using this platform?
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="
+              btn
+              operations__tab operations__tab--1 operations__tab--active
+            "
+            data-tab="1"
+          >
+            <span>01</span>Read about cosmos
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Find about researchers
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Contact us
+          </button>
+        </div>
+        <div
+          class="
+            operations__content
+            operations__content--1
+            operations__content--active
+          "
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Learn more about cosmos.</h5>
+          <p>
+            Explore new added topics, read about different objects,expand your
+            horizons. In the section "Education" you can find useful and
+            interesting information about cosmos.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Learn what researchers in this field have to say!
+          </h5>
+          <p>
+            In section "researchers" you can find about different reaserchers
+            who specialize in fields related to cosmos. Read what opinions on
+            various topics these scientists have to say!
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Create acount and contact scientists
+          </h5>
+          <p>
+            If you have questions after reading "Education" sections or just
+            simply have what to know about something related to cosmos, you can
+            create an account, choose specifict scientist and ask them about it!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Researchers</h2>
+        <h3 class="section__header">
+          Found about researchers and what they have to say.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Milky way</h5>
+            <blockquote class="testimonial__text">
+              Comte would be stunned by the discoveries made since then. Today
+              we know that the universe is far bigger and stranger than anyone
+              suspected. Not only does it extend beyond the Milky Way to untold
+              numbers of other galaxies—this would come as a surprise to
+              astronomers of the 19th and early 20th century to whom our galaxy
+              was “the universe”—but it is expanding faster every day. Now we
+              can confidently trace cosmic history back 13.8 billion years to a
+              moment only a billionth of a second after the big bang.
+              Astronomers have pinned down our universe's expansion rate, the
+              mean density of its main constituents, and other key numbers to a
+              precision of 1 or 2 percent.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/res1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">John Jones</h6>
+              <p class="testimonial__location">Chicago, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Gravity</h5>
+            <blockquote class="testimonial__text">
+              Gravity, the force that revealed all that dark matter, has proved
+              to be nearly as baffling. A pivotal moment came in 1915 when
+              Albert Einstein published his general theory of relativity, which
+              transcended Isaac Newton's mechanics and revealed that gravity is
+              actually the deformation of the fabric of space and time. This new
+              theory was slow to take hold. Even after it was shown to be
+              correct by observations of a 1919 solar eclipse, many dismissed
+              the theory as an interesting quirk—after all, Newton's laws were
+              still good enough for calculating most things.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/res3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Linda Moore</h6>
+              <p class="testimonial__location">Kentucky, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Radiation</h5>
+            <blockquote class="testimonial__text">
+              Measurements of this radiation have since enabled scientists to
+              understand how galaxies emerged. Precise observations of the
+              microwaves reveal that they are not completely uniform over the
+              sky. Some patches are slightly hotter, others slightly cooler. The
+              amplitude of these fluctuations is only one part in 100,000, but
+              they are the seeds of today's cosmic structure. Any region of the
+              expanding universe that started off slightly denser than average
+              expanded less because it was subjected to extra gravity
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/res2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Anthony Bridges</h6>
+              <p class="testimonial__location">New York, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          Create an account and contact science researchers !
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">My account</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#section--1">Education</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#section--2">Mission</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#section--3">Researchers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">My Account</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
